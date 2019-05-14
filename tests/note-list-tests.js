@@ -1,7 +1,6 @@
 (function(exports) {
   function createsNotesArray() {
     var notelist = new NoteList;
-    console.log(notelist.notes)
     if(notelist.notes.length !== 0) {
       throw new Error("Empty notes array not created!")
     };
