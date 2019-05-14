@@ -7,9 +7,5 @@
     return this.content;
   };
 
-
-
-
-
   exports.Note = Note;
 })(this);

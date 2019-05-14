@@ -6,18 +6,15 @@
       throw new Error("Note does not say test!");
     }
   };
+  storesStringAsNoteText();
+})(this);
 
+(function(exports){
   function noteCanBeReturned() {
     var note = new Note('Test2');
     if (note.readNote() !== 'Test2') {
       throw new Error("Note does not return test2");
     }
   };
-  exports.noteCanBeReturned = noteCanBeReturned;
-  exports.storesStringAsNoteText = storesStringAsNoteText;
+  noteCanBeReturned();
 })(this);
-
-storesStringAsNoteText();
-noteCanBeReturned();
-
-//TESTS PASS!!!
